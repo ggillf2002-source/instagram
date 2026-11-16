@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Loading</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#fafafa;
+ font-family:Arial,sans-serif;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ min-height:100vh;
+}
+.container{
+ text-align:center;
+ width:100%;
+ max-width:360px;
+ padding:25px;
+}
+.logo{
+ font-size:38px;
+ font-weight:bold;
+ font-family:cursive;
+ margin-bottom:45px;
+ background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+ -webkit-background-clip:text;
+ color:transparent;
+}
+.profile{
+ width:105px;
+ height:105px;
+ border-radius:50%;
+ object-fit:cover;
+ border:2px solid #ddd;
+ padding:3px;
+}
+.username{
+ font-size:18px;
+ margin-top:15px;
+ color:#262626;
+ font-weight:600;
+}
+.loading{
+ margin:40px auto 15px;
+ width:35px;
+ height:35px;
+ border:3px solid #ddd;
+ border-top:3px solid #3897f0;
+ border-radius:50%;
+ animation:spin 1s linear infinite;
+}
+@keyframes spin{
+ to{transform:rotate(360deg)}
+}
+.status{
+ color:#777;
+ font-size:14px;
+}
+.footer{
+ position:fixed;
+ bottom:25px;
+ color:#aaa;
+ font-size:12px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+ <div class="logo">Instagram</div>
+
+ <img class="profile" src="profile.jpg" alt="Profile">
+
+ <div class="username">@_Amandeep_02</div>
+
+ <div class="loading"></div>
+
+ <div class="status">Opening Instagram...</div>
+</div>
+<div class="footer">Instagram loading demo</div>
+</body>
+</html>
